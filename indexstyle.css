@@ -146,14 +146,18 @@ header{
 }
 .brands{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 20px;
 }
+.brands-items img{
+    height: 40px;
+}
 .brands-items{
-    display: flex;
+     display: flex;
     flex-direction: column;
-    align-items: center;
-    flex-grow: 1;
+    align-items: center; 
+    
 }
 /* customerexperience */
 .service{
@@ -166,9 +170,10 @@ header{
     margin: 30px 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .service2{
-    margin: 10px;
+    padding: 5px;
     display: flex;
     gap: 10px;
     justify-content: space-between; 
@@ -299,6 +304,12 @@ footer{
     .limitedoffer-container{
         display: inline-block;
         text-align: center;
+    }
+    .slider{
+        height: 200px;
+    }
+    .limitedoffer-container{
+        height: 250px;
     }
 }
 
