@@ -147,7 +147,7 @@ header{
 .brands{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 20px 10px;
 }
 .brands-items img{
@@ -167,17 +167,24 @@ header{
     text-align: justify;
 }
 .service1{
-    margin: 10px;
+    margin: 20px 10px;
     display: flex;
     justify-content: space-between;
+    gap: 30px;
     align-items: center;
 }
 .service2{
     padding: 10px;
     display: flex;
-    gap: 10px;
-    justify-content: space-around; 
+    gap: 5px;
 }
+.service2_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* newarrival */
 
 .scroll-newarrivals,.scroll-mostwanted,.scroll-limitedoffer{
@@ -189,11 +196,10 @@ header{
     justify-content: space-between;
 }
 .new-arrivals-container{
-    flex-basis: 20%;
+    flex-basis: 30%;
     position: relative;
     background-color: rgb(10, 8, 8);
     text-align: center;
-    flex-grow: 1;
     margin: 15px 0px;
     border-radius: 20px;
 }
@@ -222,7 +228,7 @@ header{
     margin-top: 10px;
 }
 .mostwanted-container{
-    flex-basis: 5%;
+    flex-basis: 3%;
     position:relative;
     flex-grow: 1;
 }
@@ -316,12 +322,13 @@ footer{
     }
     .new-arrivals-button{
         top: 40%;
-        left: 10%;
+        left: 20%;
         border-radius: 5px;
+        padding: 2px;
         cursor: pointer;
-        height: 30px;
-        width: 80px;
-        font-size: small;
+        width: fit-content;
+        height: fit-content;
+        font-size: 10px;
     }
    
 }
